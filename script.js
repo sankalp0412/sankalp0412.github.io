@@ -86,8 +86,8 @@ async function movieSelect(SelectedMovie) {
       {
         title: movie,
         poster_path: IMG_URL + film[0].poster_path,
-        vote_average: getRandomArbitrary(),
-        overview: "",
+        vote_average: film[0].vote_average,
+        overview: film[0].overview,
       },
     ];
     console.log(finalRes);
